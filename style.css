@@ -1,0 +1,47 @@
+/* setting variables for repeated colors */
+:root {
+    --blue: rgb(107, 187, 214);
+    --grey:  rgb(67, 71, 75);
+    --darkb: rgb(31, 31, 71);
+}
+
+/* element selectors */
+header{
+    background-color: var(--grey);
+    height: 100px;
+    width:100%;
+    /* display:flex; */
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    border-bottom: 5px solid var(--blue);
+    justify-content: right;
+    color: var(--blue);
+}
+
+h1 {
+    left: 0px;
+    background-color: var(--blue);
+    height: 80px;
+    width: 33.3333%;
+    font-size: large;
+    text-align: right;
+}
+
+footer ul li{
+    color: var(--grey);
+    display: inline;
+    padding: 0 10px 0 10px;
+    border-bottom: 5px solid var(--darkb);
+
+}
+
+.stock {
+
+    width:100%;
+    height: 300px;
+}
+
+
