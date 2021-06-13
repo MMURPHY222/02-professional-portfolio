@@ -23,7 +23,7 @@
 .box1{
     display:grid;
     grid-template:
-    'title navbar';
+    'title ... navbar';
     background-color:var(--grey);
     grid-column-start:1;
     grid-column-end:5;
@@ -60,9 +60,9 @@
     border:none;
     display:grid;
     grid-template:
-    '... ... ...'
-    '... ... ...'
-    '... ... subtitle';
+    '... ... ... ...'
+    '... ... ... ...'
+    '... ... ... subtitle';
 }
 
 
@@ -131,6 +131,13 @@
     grid-row-start:4;
     grid-row-end:6;
     border: 1px solid black;
+    border-radius: 100%;
+}
+
+.self-port {
+    height: 100%;
+    width:100%;
+    border-radius:100%;
 }
 
 .box10{
@@ -151,7 +158,6 @@
 }
 
 .box11 {
-    border: 1px solid black;
     grid-row-start:6;
     grid-row-end:11;
     grid-column-start:2;
@@ -169,25 +175,25 @@
 
 .p1 {
     grid-area: project1;
-    border: 1px solid black;
+    border: 5px solid var(--blue);
 }
 
 .p2 {
     grid-area: project2;
-    border: 1px solid black;
+    border: 5px solid var(--blue);
 }
 
 .p3 {
     grid-area: project3;
-    border: 1px solid black;
+    border: 5px solid var(--blue);
 }
 
 .p4 {
     grid-area: project4;
-    border: 1px solid black;
+    border: 5px solid var(--blue);
 }
 
 .p5 {
     grid-area: project5;
-    border: 1px solid black;
+    border: 5px solid var(--blue);
 }
