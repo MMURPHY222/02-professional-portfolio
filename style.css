@@ -23,6 +23,9 @@
 .box1{
     display:grid;
     grid-template:
+    /* 'title ... ...' */
+    'title ... ...'
+    'title ... ...'
     'title ... navbar';
     background-color:var(--grey);
     grid-column-start:1;
@@ -42,13 +45,21 @@
     font-size: 30px;
 }
 
+.navbar{
+    grid-area:navbar;
+    margin-bottom:5px;
+    
+}
+
 
 .navbar li{
     display: inline;
     border-bottom: 5px solid var(--blue);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
     color: var(--blue);
+   
+
 }
 
 .box2{
@@ -60,9 +71,9 @@
     border:none;
     display:grid;
     grid-template:
-    '... ... ... ...'
-    '... ... ... ...'
-    '... ... ... subtitle';
+    '... ... ... ... ...'
+    '... ... ... ... ...'
+    '... ... ... ... subtitle';
 }
 
 
@@ -132,6 +143,7 @@
     grid-row-end:6;
     border: 1px solid black;
     border-radius: 100%;
+    margin-bottom:5px;
 }
 
 .self-port {
@@ -154,7 +166,6 @@
     padding-left: 10px;
     padding-right: 10px;
     color: var(--darkb);
-    
 }
 
 .box11 {
@@ -176,24 +187,80 @@
 .p1 {
     grid-area: project1;
     border: 5px solid var(--blue);
+    background: url(https://www.denverpost.com/wp-content/uploads/2019/06/TDP-L-SAND-DUNES-_HHR1128.JPG.jpg);
+    background-size: cover;
 }
+
 
 .p2 {
     grid-area: project2;
     border: 5px solid var(--blue);
+    background: url(https://pblog.thrifty.com/wp-content/uploads/2018/01/img-hero-OLYMPICNP.jpg);
+    background-size: cover;
 }
 
 .p3 {
     grid-area: project3;
     border: 5px solid var(--blue);
+    background: url(https://national-park.com/wp-content/uploads/2016/04/Welcome-to-Grand-Canyon-National-Park.jpg);
+    background-size: cover;
 }
 
 .p4 {
     grid-area: project4;
     border: 5px solid var(--blue);
+    background: url(https://cdn.getyourguide.com/img/location/5c88db055a755.jpeg/88.jpg);
+    background-size: cover;
 }
 
 .p5 {
     grid-area: project5;
     border: 5px solid var(--blue);
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Black_Canyon_and_Gunnison_River_2008.jpg/1200px-Black_Canyon_and_Gunnison_River_2008.jpg);
+    background-size:cover;
+}
+
+/* .p1:hover {
+    background-color:dimgrey;
+    cursor:pointer;
+}
+
+.p2:hover {
+    background-color:dimgrey;
+    cursor:pointer;
+}
+
+.p3:hover {
+    background-color:dimgrey;
+    cursor:pointer;
+}
+
+.p4:hover {
+    background-color:dimgrey;
+    cursor:pointer;
+}
+
+.p5:hover {
+    background-color:dimgrey;
+    cursor:pointer;
+} */
+.works{
+    display:grid;
+    grid-template-columns:1fr 3fr 3fr 3fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template: 
+    '... ... ... ...'
+    '... ... ... ...'
+    'label ... ... ...';
+    grid-gap:1em;
+}
+
+.label{
+    grid-area: label;
+    background-color: var(--blue);
+    margin-bottom: 1em;
+}
+.works:hover{
+    background-color:dimgrey;
+    cursor:pointer;
 }
