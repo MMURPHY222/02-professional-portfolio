@@ -78,8 +78,12 @@ I set variables within my CSS for repeating colors to allow for easy changes
 ```
 
 ## Links
-I linked the navbar to push you to the correct section of the page using ids in html and I set the links in the footer to send you to perspective pages. I did not have the projects listed so I did not link anything from them. 
+I linked the navbar to push you to the correct section of the page using ids in html and I set the links in the footer to send you to perspective pages. I added links to the little blue project title boxes to allow a click on them to send the user to another webpage. I linked two of my own works, pre work about me, and homework 1, the other projects I left with the names and descriptions given in the mock up because I did not have enough works to fill them. However, I added 
 
+```bash
+<a href = "#"></a>
+```
+to allow a clickable link to be added later.
 ## Here is my deployed page
 https://mmurphy222.github.io/02-professional-portfolio/
 ## Contributing

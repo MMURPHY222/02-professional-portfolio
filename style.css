@@ -101,6 +101,17 @@
     
 }
 
+h1 {
+    color: var(--darkb);
+    margin-top: 25%;
+}
+
+.box4 p {
+    color: var(--darkb);
+    margin-top: 25%;
+    font-size:medium;
+}
+
 /* Side bar element Work */
 .box4{
     grid-column:1;
@@ -241,12 +252,16 @@
     grid-gap:1em;
 }
 
-/* editing the label for each project */
-.label{
+/* this edits the a tag within the works class which then designs the label to 
+look nice and also act as a link to send you somewhere else */
+.works a {
     grid-area: label;
     background-color: var(--blue);
     margin-bottom: 1em;
+    text-decoration: none;
+    color:var(--darkb);
 }
+
 
 /* all the projects share a work class which allows for styling */
 .works:hover{
