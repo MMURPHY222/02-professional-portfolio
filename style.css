@@ -5,7 +5,7 @@
     --darkb: rgb(31, 31, 71);
 }
 
-
+/* sets grid for entire page */
 .wrapper{
     display: grid;
     grid-template-columns:1fr 2fr 2fr;
@@ -13,13 +13,8 @@
 
 }
 
-
-.wrapper > div {
-    /* border: 1px solid black; */
-    
-}
    
-
+/* grey box at top of page */
 .box1{
     display:grid;
     grid-template:
@@ -35,6 +30,7 @@
     border:none;
 }
 
+/* Meghan Murphy box within box1 */
 .title {
     background-color: var(--blue);
     color: var(--darkb);
@@ -45,13 +41,14 @@
     font-size: 30px;
 }
 
+/* ul list in grey box */
 .navbar{
     grid-area:navbar;
     margin-bottom:5px;
     
 }
 
-
+/* adding effects to li in grey box */
 .navbar li{
     display: inline;
     border-bottom: 5px solid var(--blue);
@@ -62,6 +59,7 @@
 
 }
 
+/* gradient and layout for box2, navy gradient */
 .box2{
     grid-column-start:1;
     grid-column-end:5;
@@ -76,7 +74,7 @@
     '... ... ... ... subtitle';
 }
 
-
+/* oval within blue gradient box */
 #subtitle {
     background-color: var(--blue);
     grid-area:subtitle;
@@ -88,6 +86,8 @@
     
     
 }
+
+/* side bar element About Me */
 .box3 {
     grid-column:1;
     grid-row-start:4;
@@ -101,6 +101,7 @@
     
 }
 
+/* Side bar element Work */
 .box4{
     grid-column:1;
     grid-row-start:6;
@@ -112,6 +113,7 @@
     font-size: xx-large;
 }
 
+/* side bar element contact me */
 .box5{
     grid-column:1;
     grid-row-start:11;
@@ -123,6 +125,7 @@
     font-size: xx-large;
 }
 
+/* first paragraph in about me*/
 .box6 {
     grid-column-start:2;
     grid-column-end:3;
@@ -130,6 +133,7 @@
     grid-row-end:5;
 }
 
+/* 2nd paragraph in about me */
 .box7 {
     grid-column-start:2;
     grid-column-end:3;
@@ -137,6 +141,7 @@
     grid-row-end:6;
 }
 
+/* personal photo space in the grid*/
 .box8 {
     grid-column:3;
     grid-row-start:4;
@@ -146,18 +151,19 @@
     margin-bottom:5px;
 }
 
+
 .self-port {
     height: 100%;
     width:100%;
     border-radius:100%;
 }
 
+/* box containing footer */
 .box10{
     grid-column-start: 2;
     grid-column-end:5;
     grid-row-start:12;
     grid-row-end:13;
-    border: 1px solid black;
 }
 
 .footer li{
@@ -168,6 +174,7 @@
     color: var(--darkb);
 }
 
+/* box containing all of the projects */
 .box11 {
     grid-row-start:6;
     grid-row-end:11;
@@ -184,6 +191,7 @@
     grid-gap: 1em;
 }
 
+/* p represents each project within the box11 */
 .p1 {
     grid-area: project1;
     border: 5px solid var(--blue);
@@ -220,30 +228,8 @@
     background-size:cover;
 }
 
-/* .p1:hover {
-    background-color:dimgrey;
-    cursor:pointer;
-}
 
-.p2:hover {
-    background-color:dimgrey;
-    cursor:pointer;
-}
-
-.p3:hover {
-    background-color:dimgrey;
-    cursor:pointer;
-}
-
-.p4:hover {
-    background-color:dimgrey;
-    cursor:pointer;
-}
-
-.p5:hover {
-    background-color:dimgrey;
-    cursor:pointer;
-} */
+/* each project now became a container with a grid within */
 .works{
     display:grid;
     grid-template-columns:1fr 3fr 3fr 3fr;
@@ -255,12 +241,50 @@
     grid-gap:1em;
 }
 
+/* editing the label for each project */
 .label{
     grid-area: label;
     background-color: var(--blue);
     margin-bottom: 1em;
 }
+
+/* all the projects share a work class which allows for styling */
 .works:hover{
-    background-color:dimgrey;
     cursor:pointer;
+    border: 5px solid var(--darkb);
+}
+
+/* adds changes to navbar upon hover */
+.navbar li:hover {
+    cursor:pointer;
+    border-bottom: 5px solid var(--darkb);
+}
+
+/* adds changes to footer upon hover */
+.footer li:hover {
+    cursor:pointer;
+    border-bottom: 5px solid var(--blue);
+}
+
+/* gets rid of the link decoration that comes with an a tag */
+.navbar a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--darkb);
+}
+
+/* make navbar and footer display vertically  */
+@media only screen and (max-width:992px) {
+    .navbar li {
+        display: block;
+    }
+
+    .footer li {
+        display: block;
+        
+    }
 }
