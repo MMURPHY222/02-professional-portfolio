@@ -80,8 +80,11 @@
     text-align:center;
     border-radius:60%;
     margin-right: 10px;
-    
-    
+}
+
+/* centers the text within the blue oval */
+#subtitle p {
+    margin-top: 10%;
 }
 
 /* side bar element About Me */
