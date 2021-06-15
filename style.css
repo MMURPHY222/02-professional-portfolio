@@ -45,7 +45,6 @@
 .navbar{
     grid-area:navbar;
     margin-bottom:5px;
-    
 }
 
 /* adding effects to li in grey box */
@@ -55,8 +54,6 @@
     padding-left: 5%;
     padding-right: 5%;
     color: var(--blue);
-   
-
 }
 
 /* gradient and layout for box2, navy gradient */
@@ -101,11 +98,13 @@
     
 }
 
+/* styles the side bar words within their elements */
 h1 {
     color: var(--darkb);
     margin-top: 25%;
 }
 
+/* styles the text about clicking on project titles */
 .box4 p {
     color: var(--darkb);
     margin-top: 25%;
@@ -162,7 +161,7 @@ h1 {
     margin-bottom:5px;
 }
 
-
+/* styles the picture of me to fill the space it is given and make it an oval */
 .self-port {
     height: 100%;
     width:100%;
@@ -177,6 +176,7 @@ h1 {
     grid-row-end:13;
 }
 
+/* styles the list elements within the footer */
 .footer li{
     display: inline;
     border-bottom: 5px solid var(--darkb);
