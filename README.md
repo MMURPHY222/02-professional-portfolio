@@ -53,6 +53,32 @@ The class reference or whatever you want to place within the grid would look lik
 The numbers refer to the lines within the "grid" the lines start as 1 at the left edge or top edge of the page and end at the right edge or bottom of the page. 
 
 I chose to use grid because it was easier to understand than flexbox when needing to organize a layout of the page with. 
+
+## Background Images for Projects
+I set my background images within css because this allowed them to fully fill their grid space using 'cover' rather than messing up the layout
+
+```bash
+.p1 {
+    grid-area: project1;
+    border: 5px solid var(--blue);
+    background: url(https://www.denverpost.com/wp-content/uploads/2019/06/TDP-L-SAND-DUNES-_HHR1128.JPG.jpg);
+    background-size: cover;
+}
+```
+This is how I set the background for the first project listed and did the same for subsequent projects
+
+## Variables
+I set variables within my CSS for repeating colors to allow for easy changes
+```bash
+:root {
+    --blue: rgb(107, 187, 214);
+    --grey:  rgb(67, 71, 75);
+    --darkb: rgb(31, 31, 71);
+}
+```
+
+## Links
+I linked the navbar to push you to the correct section of the page using ids in html and I set the links in the footer to send you to perspective pages. I did not have the projects listed so I did not link anything from them. 
 ## Contributing
 Image credits: 
 
